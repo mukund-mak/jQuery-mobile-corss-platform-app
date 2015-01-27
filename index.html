@@ -1,0 +1,118 @@
+<html>
+<head>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+		 <input type="hidden" id="session_key" />
+    <div data-role="page" id="login" class="" data-ajax="false">
+        <div data-role="header"   >
+            <h3>Sign In</h3>
+        </div>
+
+        <div data-role="main" class="ui-content" >
+            <form id="check-user"  data-ajax="false" class="ui-bar ui-bar-a ui-corner-all"  >
+                <fieldset  >
+                    <div class="ui-field-contain" >
+                        <label for="username" class="required">Username:</label>
+                        <input  type="text" value="" name="username" id="username"/>
+                        <label for="password">Password:</label>
+                        <input type="password" value="" name="password" id="password" />
+                    </div>
+                    <button class="ui-btn ui-shadow ui-corner-all ui-btn-b" name="submit" id="submit" value="submit">Enter</button>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+       <div data-role="page" id="welcome">
+       
+	       <div data-role="panel" id="myPanel" data-position="left" data-theme="b">
+	       	   <h3>navigation</h3>
+	       	   <a href="#welcome" class="ui-btn">Home</a>
+	       		  <a href="#about" class="ui-btn">About</a>
+	       		  <a href="#" class="ui-btn">Features</a>
+	       		  <a href="#" class="ui-btn">Settings</a>
+	       		  <a href="#contact" class="ui-btn">Contact</a>
+	       		  
+	       </div>
+	       
+	       <div data-role="header" data-theme="b">
+	       		  <h1>HOME</h1>
+	       		  <a href="#myPanel" class="ui-btn ui-btn-inline  ui-btn-icon-left ui-btn-icon-gear">Options</a>
+	       		  <a href="#signOut" class="ui-btn ui-btn-inline ui-btn-icon-right ui-btn-icon-user">SignOut</a>
+
+
+	       		  
+	   		</div>
+	       
+	       <div role="main" class="ui-content">
+	             <a href="#led" class="ui-btn">LED BLINK</a>
+	             <a href="#signOut" class="ui-btn">LDR</a>
+	             <a href="#" class="ui-btn">Temperature</a>
+	       		 <a href="#" class="ui-btn">XXXXXX</a>
+	       		 
+	             
+	             <!--  <a href="#myPanel" class="ui-btn">Panel</a>
+			</div>
+			<!-- <div data-role="footer">
+			by:- Mukund</div> -->
+       </div>
+   </div>
+    <div data-role="page" id="about">
+          <div data-role="header" data-theme="b"></div>
+            
+    <div role="main" class="iu-content"></div>
+
+<!-- <div data-role="footer">
+by:- Mukund</div> -->
+	</div>
+
+	<div data-role="page" id="led">
+          <div data-role="header" data-theme="b"></div>
+            <h1>LED</h1>
+    <div role="main" class="iu-content">
+       		 <label for="slider2">Switch on/off led</label>
+			<select name="slider2" id="slider2" data-role="slider">
+    			<option value="off">Off</option>
+ 			    <option value="on">On</option>
+			</select>
+    </div>
+   </div>
+ 
+
+   <!--  <div data-role="page" id="signOut">
+          <div data-role="header"></div>
+            <h1>Sign Up</h1>
+    	<div role="main" class="iu-content">
+         -->
+        </div>
+   </div>
+
+
+   <div data-role="page" id="contact">
+          <div data-role="header"></div>
+            <h1>Contact Us</h1>
+    <div role="main" class="iu-content">
+    		<p>This app is created usder the mentorship of enCypher Technologies Pvt. Ltd.</p>
+    </div>
+   </div>
+
+
+   	<div id="introContainer">
+	<div id="introContent">
+			Prepare to get Shocked!
+	</div>
+	</div>
+
+
+
+</body>
+</html>
